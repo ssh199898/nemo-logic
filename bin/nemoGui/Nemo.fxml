@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nemoGui.NemoController">
+   <children>
+      <GridPane fx:id="gdpBoard" layoutX="275.0" layoutY="240.0" prefHeight="400.0" prefWidth="500.0">
+      </GridPane>
+      <Button fx:id="btSubmit" layoutX="685.0" layoutY="660.0" mnemonicParsing="false" onAction="#handleSubmitAction" prefHeight="20.0" prefWidth="90.0" style="-fx-background-color: Orange; -fx-text-fill: White;" styleClass="bt-all" text="SUBMIT" textAlignment="CENTER">
+         <font>
+            <Font name="Segoe UI" size="12.0" />
+         </font></Button>
+      <HBox fx:id="hbTop" alignment="BOTTOM_LEFT" layoutX="275.0" layoutY="40.0" prefHeight="200.0" prefWidth="500.0" />
+      <VBox fx:id="vbLeft" alignment="CENTER_RIGHT" layoutX="25.0" layoutY="240.0" prefHeight="400.0" prefWidth="250.0" />
+      <Button fx:id="btClear" layoutX="580.0" layoutY="660.0" mnemonicParsing="false" onAction="#handleClearAction" prefHeight="20.0" prefWidth="90.0" style="-fx-background-color: skyblue;" styleClass="bt-all" text="Clear Board" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI" size="12.0" />
+         </font></Button>
+      <Label layoutX="79.0" layoutY="57.0" text="Nemo" textAlignment="CENTER">
+         <font>
+            <Font name="Segoe UI Semilight" size="37.0" />
+         </font>
+      </Label>
+      <Label layoutX="79.0" layoutY="97.0" text="Logic" textAlignment="CENTER">
+         <font>
+            <Font name="Segoe UI Semilight" size="37.0" />
+         </font>
+      </Label>
+      <VBox layoutX="44.0" layoutY="66.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="SKYBLUE" height="25.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="25.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c0ff62" height="25.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="25.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffb600" height="25.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="25.0" />
+         </children>
+      </VBox>
+      <HBox alignment="TOP_CENTER" layoutX="43.0" layoutY="151.0">
+         <children>
+            <Label prefHeight="27.0" prefWidth="52.0" text="Map :" textAlignment="CENTER">
+               <font>
+                  <Font name="Segoe UI Semilight" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lbMapName" prefHeight="27.0" prefWidth="170.0">
+               <font>
+                  <Font name="Segoe UI Semilight" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

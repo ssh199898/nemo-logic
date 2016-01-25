@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nemoGui.EditorController">
+   <children>
+      <GridPane fx:id="gdpBoard" layoutX="275.0" layoutY="240.0" prefHeight="400.0" prefWidth="500.0">
+      </GridPane>
+      <Button fx:id="btMake" layoutX="685.0" layoutY="660.0" mnemonicParsing="false" onAction="#handleMakeAction" prefHeight="20.0" prefWidth="90.0" style="-fx-background-color: Orange; -fx-text-fill: White;" styleClass="bt-all" text="SUBMIT" textAlignment="CENTER">
+         <font>
+            <Font name="Segoe UI" size="12.0" />
+         </font></Button>
+      <Button fx:id="btClear" layoutX="580.0" layoutY="660.0" mnemonicParsing="false" onAction="#handleClearAction" prefHeight="20.0" prefWidth="90.0" style="-fx-background-color: skyblue;" styleClass="bt-all" text="Clear Board" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI" size="12.0" />
+         </font></Button><Label layoutX="56.0" layoutY="40.0" text="Nemo" textAlignment="CENTER">
+         <font>
+            <Font name="Segoe UI Semilight" size="37.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="76.0" text="Map Editor" textAlignment="CENTER">
+         <font>
+            <Font name="Segoe UI Semilight" size="37.0" />
+         </font>
+      </Label>
+      <TextField fx:id="path" layoutX="425.0" layoutY="661.0" />
+      <Label layoutX="351.0" layoutY="662.0" text="File Name">
+         <font>
+            <Font name="Segoe UI Semilight" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
